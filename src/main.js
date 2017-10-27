@@ -10,10 +10,12 @@ app.on('ready', _ => {
         width: 400
     })
 
-    mainWindow.loadURL(`file://${__dirname}/status.html`)    
+    mainWindow.loadURL(`file://${__dirname}/status.html`)
+
+    mainWindow.on('close', _ => {
+        mainWindow = null
+    })
 })
 
-app.on('close', _ => {
-    mainWindow = null
-})
+
 
