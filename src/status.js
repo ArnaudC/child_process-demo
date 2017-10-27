@@ -52,3 +52,4 @@ document.getElementById('input').addEventListener('keyup', evt => {
             checkGitStatus(dir)
     }, 500)
 })
+checkGitStatus(document.getElementById('input').value)
