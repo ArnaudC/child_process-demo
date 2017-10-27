@@ -45,6 +45,7 @@ function setStatus(status) {
 
 let timer
 document.getElementById('input').addEventListener('keyup', evt => {
+    removeStatus()
     clearTimeout(timer)
     timer = setTimeout(_ => {
         const dir = formatDir(evt.target.value)
