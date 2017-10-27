@@ -9,6 +9,8 @@ app.on('ready', _ => {
         height: 400,
         width: 400
     })
+
+    mainWindow.loadURL(`file://${__dirname}/status.html`)    
 })
 
 app.on('close', _ => {
